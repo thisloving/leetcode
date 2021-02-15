@@ -5,6 +5,34 @@ import (
 )
 
 func lengthOfLongestSubstring(s string) int {
+	/*
+		    if len(s) == 0 {
+			    return 0
+		    }
+
+			m := make(map[string]int)
+			length := int(0)
+			left := int(0)
+			right := int(0)
+			tmpLength := int(0)
+			for _, v := range s {
+				if pos, ok := m[string(v)]; ok {
+					if left < pos+1 {
+						left = pos + 1
+					}
+				}
+
+				m[string(v)] = right
+				tmpLength = right - left
+				if length < tmpLength {
+					length = tmpLength
+				}
+				right++
+			}
+
+			return length + 1
+	*/
+
 	if len(s) == 0 {
 		return 0
 	}
