@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 func longestPalindrome(s string) string {
@@ -56,8 +55,14 @@ func longestPalindrome(s string) string {
 	}
 
 	//fmt.Println(begin, end, maxLen)
-	subStr := str[begin : end+1]
-	subStr = strings.Replace(subStr, "#", "", -1)
+	var subStr string
+	//subStr = str[begin : end+1]
+	//subStr = strings.Replace(subStr, "#", "", -1)
+	for i := begin; i <= end; i++ {
+		if i%2 != 0 {
+			subStr += string(str[i])
+		}
+	}
 	return subStr
 }
 
