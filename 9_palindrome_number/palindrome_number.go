@@ -7,6 +7,10 @@ func isPalindrome(x int) bool {
 		return false
 	}
 
+	if x < 10 {
+		return true
+	}
+
 	oldX := x
 	y := int(0)
 	for x != 0 {
