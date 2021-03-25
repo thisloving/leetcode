@@ -38,7 +38,7 @@ Output: false
 
 **Constraints:**
 
-- `-231 <= x <= 231 - 1`
+- `-2<sup>TM</sup> <= x <= 231 - 1`
 
  
 
